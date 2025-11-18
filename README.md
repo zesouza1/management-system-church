@@ -7,7 +7,9 @@
  - [Requisitos Não Funcionais](#requisitos-não-funcionais)
  - [Escopo do Projeto](#escopo-do-projeto)
  - [Diagrama de Caso de Uso](#diagrama-de-caso-de-uso)
- - [Tecnologias a serem utilizadas](#tecnolgoias-a-serem-utilizadas)
+ - [Tecnologias a serem utilizadas](#tecnologias-a-serem-utilizadas)
+ - [Modulos do Sistema](#modulos-do-sistema)
+ - [Permissões de Usuários](#permissões-de-usuários)
 
 ### Resumo
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
@@ -40,7 +42,7 @@ Com isso, ocorre os seguintes problemas:
 
 ### Perfil de Usuários
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
-Os usuáios são membros do Conselho Pastoral Paroquial, casais de apoio que ajudam na lojinha paroquial e catequistas. Sao pessoas que tem de 16 a 60 anos. Alguns utilizam desktop e notebooks, todos utilizam celulares e todos possuem acesso a internet, seja no celular via 4G/5G ou via internet cabeada (residencial).
+Os usuários são membros do Conselho Pastoral Paroquial, casais de apoio que ajudam na lojinha paroquial e catequistas. Sao pessoas que tem de 16 a 60 anos. Alguns utilizam desktop e notebooks, todos utilizam celulares e todos possuem acesso a internet, seja no celular via 4G/5G ou via internet cabeada (residencial).
 
 ### Requisitos Funcionais
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
@@ -59,6 +61,7 @@ Os usuáios são membros do Conselho Pastoral Paroquial, casais de apoio que aju
 12 - O sistema deve notificar o Administrador sobre alterações a serem confirmadas, assim como inclusão de dados a serem confirmadors e liberação de cadastro a serem confirmadas.
 13 - O sistema não deve permitir cadastro de usuários com mesmo e-mail.
 14 - O sistema deve permitir a impressão de relatórios por módulo pertinentens a eles.
+15 - O sistema deverá permitir que o agendamento aberto de atendimentos não tenha restrição de usuário, sendo aberta apenas ela para agendamento.
 
 ### Requisitos Não Funcionais
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
@@ -70,6 +73,7 @@ Os usuáios são membros do Conselho Pastoral Paroquial, casais de apoio que aju
 6 - O sistema deve notificar o usuário faltar com algum dado a ser preenchido, a informação deve ser clara.
 7 - O sistema deve notificar quando o sistema não estiver funcionando.
 8 - O sistema deve notificar quando há um erro com informações claras.
+9 - O sistema deve notificar quando há um nobo agendamento na agenda ao Administrador.
 
 
 ### Escopo do Projeto
@@ -93,10 +97,81 @@ Não Inclui:
 
  ![Diagrama de Caso de Uso](/img-md/diagrama_caso_de_uso.jpg)
 
-### Tecnolgoias a serem utilizadas
+### Tecnologias a serem utilizadas
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
 
 Backend : Python utilizando flaks para criação de rotas
-Frontend : HTML, CSS utilizando Tailwind CSS para estilização, JavaScript para interação;
+Frontend : HTML, CSS utilizando Tailwind CSS para estilização e React com Vite para interação;
 Banco de Dados : Postgree no Supabase utilizando o JWT (JSON Web Token) e RLS (Row Level Security) que a plataforma disponibiliza
-Versionamento de código : GitHUb
+Versionamento de código : GitHub
+
+### Modulos do Sistema
+###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
+O sistema contará com os seguintes modulos:
+- Calendario Paroquial : um calendário compartilhado.
+- Gerenciamento de Usuario : para gerenciar os usuarios do sistema.
+- Perfil : Para possivel alteração de dados pelo usuario.
+- Catequese : para gerenciamento da catequese como turmas e alunos.
+- Loja Paroquial : para gerenciamento da loja paroquial como produtos, vendas e relátorios de vendas.
+- Notificações : para notificações ao Adminsitrador.
+- Atendimento : para gerenciamento dos atendimentos na paróquia.
+- Gerenciamento de Locais : para gerenciamento dos locais que serão disponibilizados na paróquia.
+
+
+### Permissões de Usuários
+###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
+
+> Administrador
+- Alterar dados de usuarios e seu proprio perfil.
+- Poderá alterar cargos (menos o cargo de Adminstrador).
+- Poderá aceitar ou revogar solicitações de novos cadastros.
+- Poderá aceitar ou revogar solicitações de novos eventos.
+- Poderá aceitar ou revogar alterações de eventos.
+- Poderá aceitar ou revogar exclusão de eventos.
+- Poderá acessar todos os módulos.
+- Poderá adicionar dados aos módulos.
+- Poderá excluir usuários.
+
+> Gerenciador
+- Alterar e-mail de usuários.
+- Poderá dar cargos aos usuaríos (menos o cargo de Administrador e Gerenciador).
+- Poderá aceitar ou revogar solicitações de novos cadastros.
+- Poderá acessar todos os módulos.
+- Poderá adicionar dados aos módulos.
+
+> Coordenador de Catequese (Coordenador e vice)
+- Alterar dados de perfil como e-mail e telefone.
+- Poderá acessar os módulos Calendário Paroquial, Perfil e Catequese.
+- Poderá adicionar dados aos módulos. (Após aceitação ou revogação do Administrador).
+- Poderá alterar dados que o usuário com o cargo adicionou aos módulos. (Após aceitação ou revogação do Administrador).
+- Poderá excluir dados que o usuário com o cargo adicionou aos módulos. (Após aceitação ou revogação do Administrador).
+
+> Catequista
+- Alterar dados de perfim como e-mail e telefone.
+- Poderá acessar os módulos Perfil e Catequese.
+- Poderá adicionar dados aos módulos.
+- Poderá alterar dados que o usuário com o cargo adicionou aos módulos.
+
+> Coordenador Loja Paroquial (Coordenador e Vice)
+- Alterar dados de perfil como e-mail e telefone.
+- Poderá acessar os módulos Perfil e Loja Paroquial.
+- Poderá adicionar dados aos módulos.
+- Poderá alterar dados que o usuário com o cargo adicionou aos módulos.
+- Poderá excluir dados que o usuário com o cargo adicionou aos módulos.
+- Poderá fazer fechamento de caixa.
+
+> Vendedor Loja Paroquial
+- Alterar dados de perfil como e-mail e telefone.
+- Poderá acessar os módulos Perfil e Loja Paroquial.
+- Poderá fazer fechamento de caixa.
+
+> Coordenador (Pastoral, Movimentos e Comunidades [Coordenador e Vice])
+- Alterar dados de perfil como e-mail e telefone.
+- Poderá acessar os módulos Calendário Paroquial e Perfil.
+- Poderá adicionar dados aos módulos.
+- Poderá alterar dados que o usuário com o cargo adicionou ao módulo. (Após aceitação ou revogação do Administrador)
+- Poderá excluir dados que o usuário com o cargo adicionou ao módulo. (Após aceitação ou revogação do Administrador)
+
+> Convidado
+- Acesso ao link de agendamento de atendimento
+
