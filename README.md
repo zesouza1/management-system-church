@@ -39,10 +39,12 @@ Com isso, ocorre os seguintes problemas:
 - Deixar que a catequese crie as turmas e gerencie elas;
 - Auxiliar na contabilidade da lojinha paroquial, sobre estoques e pedidos;
 - Relatórios facéis para a secretaria paroquial e para o financeiro sobre catequese, lojinha paroquial e também sobre a agenda paroquial;
+- Agendamento fácil para pessoas marcarem seus atendimento sem a necessidade de contactar a secretaria paroquial;
 
 ### Perfil de Usuários
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
 Os usuários são membros do Conselho Pastoral Paroquial, casais de apoio que ajudam na lojinha paroquial e catequistas. Sao pessoas que tem de 16 a 60 anos. Alguns utilizam desktop e notebooks, todos utilizam celulares e todos possuem acesso a internet, seja no celular via 4G/5G ou via internet cabeada (residencial).
+O agendamento será realizado por qualquer pessoas que necessite de um atendimento ou conversar com o padre;
 
 ### Requisitos Funcionais
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
@@ -62,18 +64,23 @@ Os usuários são membros do Conselho Pastoral Paroquial, casais de apoio que aj
 13 - O sistema não deve permitir cadastro de usuários com mesmo e-mail.
 14 - O sistema deve permitir a impressão de relatórios por módulo pertinentens a eles.
 15 - O sistema deverá permitir que o agendamento aberto de atendimentos não tenha restrição de usuário, sendo aberta apenas ela para agendamento.
+16 - O sistema deve disponilizar um link externo para agendamento.
+17 - O sistema deve permitir que o agendamento sejá realizado apenas através do link.
+18 - O sistema não deve permitir que a pessoa que possuir o link possa ter acesso ao sistema.
+19 - O sistema deve permitir que o Administrador disponibilize os dias e horários para agendamento externo.
+
 
 ### Requisitos Não Funcionais
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
 1 - O sistema deve estar funcionando 24h por dia.
 2 - O sistema deve ter as senhas dos usuários criptografadas.
-3 - O sistema deve notificar uma confirmação da ação que o usuário estpa fazendo.
+3 - O sistema deve notificar uma confirmação da ação que o usuário esta fazendo.
 4 - O sistema deve notificar uma verificação de exclusão de algo.
 5 - O sistema deve manter um log de tudo que está ocorrendo no sistema por pelo menos 6 mêses para possiveis bugs.
 6 - O sistema deve notificar o usuário faltar com algum dado a ser preenchido, a informação deve ser clara.
 7 - O sistema deve notificar quando o sistema não estiver funcionando.
 8 - O sistema deve notificar quando há um erro com informações claras.
-9 - O sistema deve notificar quando há um nobo agendamento na agenda ao Administrador.
+9 - O sistema deve notificar quando há um novo agendamento na agenda ao Administrador.
 
 
 ### Escopo do Projeto
