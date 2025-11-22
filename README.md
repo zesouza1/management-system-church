@@ -49,38 +49,38 @@ O agendamento será realizado por qualquer pessoas que necessite de um atendimen
 ### Requisitos Funcionais
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
 
-1 - O sistema deve permitir que o usuário realize o cadastro.
-2 - O sistema deve permitir que o usuário faça login através do e-mail e senha.
-3 - O sistema deve apresentar ao usuário apenas os módulos que ele terá acesso.
-4 - O sistema deve permitir que apenas o Administrador possa liberar o acesso aos usuários.
-5 - O sistema não deve permitir que o usuário deixe campos em brancos.
-6 - O sistema não deve permitir que o usuário faça a exclusão de qualquer dado no sistema, incluindo os proprios.
-7 - O sistema deve permitir que o usuários possa alterar apenas dados especificos, não podendo alterar o nome e a sua pastoral ou movimento.
-8 - O sistema não deve permitir que a alteração seja efetuada sem a autorização do Administrador, salvo em alteração de perfil do usuário.
-9 - O sistema deve permitir que apenas o Administrador possa alterar seus dados totalmente.
-10 - O sistema deve permitir que os usuários possam utilizar os módulos de acordo com a sua pastoral, movimento e comunidade.
-11 - O sistema deve permitir que o Administrador possa fazer qualquer alteração em qualquer módulo, desde exclusão, alteração ou cadastro.
-12 - O sistema deve notificar o Administrador sobre alterações a serem confirmadas, assim como inclusão de dados a serem confirmadors e liberação de cadastro a serem confirmadas.
-13 - O sistema não deve permitir cadastro de usuários com mesmo e-mail.
-14 - O sistema deve permitir a impressão de relatórios por módulo pertinentens a eles.
-15 - O sistema deverá permitir que o agendamento aberto de atendimentos não tenha restrição de usuário, sendo aberta apenas ela para agendamento.
-16 - O sistema deve disponilizar um link externo para agendamento.
-17 - O sistema deve permitir que o agendamento sejá realizado apenas através do link.
-18 - O sistema não deve permitir que a pessoa que possuir o link possa ter acesso ao sistema.
-19 - O sistema deve permitir que o Administrador disponibilize os dias e horários para agendamento externo.
++ 1 - O sistema deve permitir que o usuário realize o cadastro.
++ 2 - O sistema deve permitir que o usuário faça login através do e-mail e senha.
++ 3 - O sistema deve apresentar ao usuário apenas os módulos que ele terá acesso.
++ 4 - O sistema deve permitir que apenas o Administrador possa liberar o acesso aos usuários.
++ 5 - O sistema não deve permitir que o usuário deixe campos em brancos.
++ 6 - O sistema não deve permitir que o usuário faça a exclusão de qualquer dado no sistema, incluindo os proprios.
++ 7 - O sistema deve permitir que o usuários possa alterar apenas dados especificos, não podendo alterar o nome e a sua pastoral ou movimento.
++ 8 - O sistema não deve permitir que a alteração seja efetuada sem a autorização do Administrador, salvo em alteração de perfil do usuário.
++ 9 - O sistema deve permitir que apenas o Administrador possa alterar seus dados totalmente.
++ 10 - O sistema deve permitir que os usuários possam utilizar os módulos de acordo com a sua pastoral, movimento e comunidade.
++ 11 - O sistema deve permitir que o Administrador possa fazer qualquer alteração em qualquer módulo, desde exclusão, alteração ou cadastro.
++ 12 - O sistema deve notificar o Administrador sobre alterações a serem confirmadas, assim como inclusão de dados a serem confirmadors e liberação de cadastro a serem confirmadas.
++ 13 - O sistema não deve permitir cadastro de usuários com mesmo e-mail.
++ 14 - O sistema deve permitir a impressão de relatórios por módulo pertinentens a eles.
++ 15 - O sistema deverá permitir que o agendamento aberto de atendimentos não tenha restrição de usuário, sendo aberta apenas ela para agendamento.
++ 16 - O sistema deve disponilizar um link externo para agendamento.
++ 17 - O sistema deve permitir que o agendamento sejá realizado apenas através do link.
++ 18 - O sistema não deve permitir que a pessoa que possuir o link possa ter acesso ao sistema.
++ 19 - O sistema deve permitir que o Administrador disponibilize os dias e horários para agendamento externo.
 
 
 ### Requisitos Não Funcionais
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
-1 - O sistema deve estar funcionando 24h por dia.
-2 - O sistema deve ter as senhas dos usuários criptografadas.
-3 - O sistema deve notificar uma confirmação da ação que o usuário esta fazendo.
-4 - O sistema deve notificar uma verificação de exclusão de algo.
-5 - O sistema deve manter um log de tudo que está ocorrendo no sistema por pelo menos 6 mêses para possiveis bugs.
-6 - O sistema deve notificar o usuário faltar com algum dado a ser preenchido, a informação deve ser clara.
-7 - O sistema deve notificar quando o sistema não estiver funcionando.
-8 - O sistema deve notificar quando há um erro com informações claras.
-9 - O sistema deve notificar quando há um novo agendamento na agenda ao Administrador.
++ 1 - O sistema deve estar funcionando 24h por dia.
++ 2 - O sistema deve ter as senhas dos usuários criptografadas.
++ 3 - O sistema deve notificar uma confirmação da ação que o usuário esta fazendo.
++ 4 - O sistema deve notificar uma verificação de exclusão de algo.
++ 5 - O sistema deve manter um log de tudo que está ocorrendo no sistema por pelo menos 6 mêses para possiveis bugs.
++ 6 - O sistema deve notificar o usuário faltar com algum dado a ser preenchido, a informação deve ser clara.
++ 7 - O sistema deve notificar quando o sistema não estiver funcionando.
++ 8 - O sistema deve notificar quando há um erro com informações claras.
++ 9 - O sistema deve notificar quando há um novo agendamento na agenda ao Administrador.
 
 
 ### Escopo do Projeto
