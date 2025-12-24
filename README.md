@@ -107,10 +107,10 @@ Não Inclui:
 ### Tecnologias a serem utilizadas
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
 
->Backend : Python utilizando flaks para criação de rotas
->Frontend : HTML, CSS utilizando Tailwind CSS para estilização e React com Vite para interação;
->Banco de Dados : Postgree no Supabase utilizando o JWT (JSON Web Token) e RLS (Row Level Security) que a plataforma disponibiliza
->Versionamento de código : GitHub
+- Backend : Python utilizando flaks para criação de rotas
+- Frontend : HTML, CSS utilizando Tailwind CSS para estilização e React com Vite para interação;
+- Banco de Dados : Postgree no Supabase utilizando o JWT (JSON Web Token) e RLS (Row Level Security) que a plataforma disponibiliza
+- Versionamento de código : GitHub
 
 ### Modulos do Sistema
 ###### [Voltar ao topo](#sistema-de-gerenciamento-paroquial)
